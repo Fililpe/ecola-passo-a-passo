@@ -33,6 +33,10 @@ h1 {
   /* font-family: "Poetsen One", sans-serif; */
 }
 
+carousel-container img {
+  width: 500px;
+}
+
 .center-container {
   display: flex;
   flex-direction: column;

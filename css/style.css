@@ -33,8 +33,21 @@ h1 {
   /* font-family: "Poetsen One", sans-serif; */
 }
 
-carousel-container img {
-  width: 500px;
+strong {
+  font-weight: bold;
+}
+
+/* .carousel-container {
+  height: 80vh;
+}
+
+.carrousel-inner {
+  height: 80vh;
+} */
+
+#logo-menu {
+  height: 8vh;
+  margin-right: 2rem;
 }
 
 .center-container {
@@ -82,6 +95,8 @@ carousel-container img {
   display: flex;
   flex-direction: column;
   width: 60%;
+  text-indent: 1rem;
+  text-align: justify;
 }
 
 .img-container {
@@ -93,6 +108,7 @@ carousel-container img {
 
 .img-container img {
   width: 400px;
+  border-radius: 12px;
 }
 
 #valores-list li {

@@ -23,6 +23,10 @@
   color: #0c0c0c;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 header {
   height: 80vh;
 }
@@ -42,32 +46,72 @@ strong {
   color: var(--azul);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #logo-menu {
   height: 8vh;
   margin-right: 2rem;
 }
 
+.slogan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  align-content: center;
+
+  width: 100vw;
+  margin-left: 1rem;
+  margin-top: 5rem;
+}
+
+.slogan h1 {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.slogan h2 {
+  font-size: 1.5rem;
+  font-family: "Monstserrat", sans-serif;
+}
 .home-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-logo-intro {
+  width: 100vw;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.home-video video {
-  max-height: 70vh;
-  width: 100vw;
-  z-index: -1;
-}
-
-#logo-home {
-  height: 100%;
-  z-index: 0;
-  filter: drop-shadow(25px 25px 25px #555);
-}
-
-.home {
-  display: flex;
-  height: 30%;
+.container-logo-intro img {
+  height: 30vh;
+  filter: drop-shadow(15px 15px 15px #555);
 }
 
 .center-container {
@@ -75,11 +119,8 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  align-content: center;
 }
 
 .sec-container {
@@ -110,10 +151,67 @@ strong {
   border-radius: 12px;
 }
 
+#sobre {
+  margin-top: 5%;
+}
+
 #valores-list li {
   list-style: circle;
 }
 
 #amostra img {
   width: 70vw;
+}
+.mapa-container {
+  padding: 30px;
+}
+
+.mapa-container iframe {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: 5rem;
+  border-radius: 16px 16px 0px 0px;
+  background-color: #e8e8e8;
+}
+
+#footer-logo img {
+  width: 200px;
+}
+
+#contato img {
+  margin: 1rem;
+}
+
+#mapa-site li {
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  .sec-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .txt-container {
+    text-align: center;
+  }
+  .txt-container li {
+    text-align: left;
+  }
+
+  #valores {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

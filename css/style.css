@@ -36,7 +36,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Poetsen One", sans-serif; */
 }
@@ -44,6 +45,10 @@ h1 {
 strong {
   font-weight: bold;
   color: var(--azul);
+}
+
+h1 {
+  margin-block: 20px;
 }
 
 a {
@@ -111,7 +116,7 @@ a {
 
 .container-logo-intro img {
   height: 30vh;
-  filter: drop-shadow(15px 15px 15px #555);
+  filter: drop-shadow(5px 5px 5px #555);
 }
 
 .center-container {
@@ -159,15 +164,56 @@ a {
   list-style: circle;
 }
 
-#amostra img {
-  width: 70vw;
+#amostra {
+  flex-direction: column;
 }
+
+#amostra img {
+  width: 80vw;
+}
+
+#amostra h1 {
+  padding: 30px;
+}
+
 .mapa-container {
   padding: 30px;
 }
 
 .mapa-container iframe {
   width: 100%;
+}
+
+#alimentacao {
+  background-color: #a6b01a;
+}
+
+#img-alimentacao {
+  max-width: 200px;
+}
+
+.alimentacao-container {
+  display: flex;
+  padding: 50px;
+  gap: 1.5rem;
+}
+
+.art-alimentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.art-alimentacao img {
+  height: 200px;
+}
+
+#intro-art {
+  display: flex;
+  padding: 50px;
+  align-items: center;
 }
 
 footer {
@@ -194,6 +240,10 @@ footer {
 }
 
 @media (max-width: 990px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+
   .sec-container {
     flex-direction: column;
     padding: 0;
@@ -206,8 +256,17 @@ footer {
     text-align: left;
   }
 
+  .container-logo-intro {
+    margin-top: 70px;
+  }
+
   #valores {
     flex-direction: column-reverse;
+  }
+
+  .alimentacao-container {
+    flex-direction: column;
+    gap: 5rem;
   }
 
   footer {

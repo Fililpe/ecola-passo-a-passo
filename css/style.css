@@ -116,7 +116,7 @@ a {
 
 .container-logo-intro img {
   height: 30vh;
-  filter: drop-shadow(5px 5px 5px #555);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .center-container {
@@ -166,14 +166,20 @@ a {
 
 #amostra {
   flex-direction: column;
-}
-
-#amostra img {
-  width: 80vw;
+  margin-inline: 50px;
+  padding-bottom: 50px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e5e0dd, #ffffff);
+  box-shadow: 20px 20px 60px #d8d4d1, -20px -20px 60px #ffffff;
 }
 
 #amostra h1 {
-  padding: 30px;
+  font-family: Roboto, sans-serif;
+  padding: 20px;
+}
+
+#amostra img {
+  width: 70vw;
 }
 
 .mapa-container {
@@ -244,20 +250,31 @@ footer {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
 
+  .slogan h1 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
   .sec-container {
     flex-direction: column;
-    padding: 0;
+    padding: 30px;
   }
 
   .txt-container {
-    text-align: center;
+    /* text-align: center; */
+    width: 100%;
   }
-  .txt-container li {
-    text-align: left;
+
+  .img-container {
+    width: 100%;
   }
 
   .container-logo-intro {
     margin-top: 70px;
+  }
+
+  #amostra img {
+    width: 80vw;
   }
 
   #valores {

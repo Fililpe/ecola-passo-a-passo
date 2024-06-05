@@ -166,11 +166,11 @@ a {
 
 #amostra {
   flex-direction: column;
-  margin-inline: 50px;
+  /* margin-inline: 50px;
   padding-bottom: 50px;
   border-radius: 50px;
   background: linear-gradient(145deg, #e5e0dd, #ffffff);
-  box-shadow: 20px 20px 60px #d8d4d1, -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #d8d4d1, -20px -20px 60px #ffffff; */
 }
 
 #amostra h1 {

@@ -7,6 +7,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "senmoly";
+  src: url("../assets/fonts/Senmoly\ Caligan.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --azul: #0f74b6;
@@ -40,6 +46,7 @@ h1,
 h2 {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Poetsen One", sans-serif; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 strong {
@@ -142,6 +149,7 @@ a {
   width: 60%;
   text-indent: 1rem;
   text-align: justify;
+  /* align-items: center; */
 }
 
 .img-container {
@@ -166,16 +174,11 @@ a {
 
 #amostra {
   flex-direction: column;
-  /* margin-inline: 50px;
-  padding-bottom: 50px;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #e5e0dd, #ffffff);
-  box-shadow: 20px 20px 60px #d8d4d1, -20px -20px 60px #ffffff; */
 }
 
 #amostra h1 {
-  font-family: Roboto, sans-serif;
-  padding: 20px;
+  font-family: senmoly, sans-serif;
+  /* padding: 20px; */
 }
 
 #amostra img {
@@ -192,6 +195,7 @@ a {
 
 #alimentacao {
   background-color: #a6b01a;
+  flex-direction: column;
 }
 
 #img-alimentacao {
@@ -216,10 +220,60 @@ a {
   height: 200px;
 }
 
-#intro-art {
+.intro-art {
   display: flex;
   padding: 50px;
   align-items: center;
+}
+
+#atividades {
+  flex-direction: column;
+  margin-inline: 50px;
+  padding: 50px;
+  border-radius: 50px;
+  background: #fef9f6;
+  box-shadow: inset 20px 20px 60px #d8d4d1, inset -20px -20px 60px #ffffff;
+}
+
+#intro-atividade {
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+#intro-atividade h1,
+p {
+  text-align: center;
+}
+
+#atividades-container {
+  display: flex;
+  flex-direction: column;
+}
+.atividades-list img {
+  width: 300px;
+}
+
+.atividades-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.atividade-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#atividade-fechamento {
+  margin-top: 5%;
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  padding: 30px;
+  font-weight: bold;
 }
 
 footer {
@@ -261,8 +315,9 @@ footer {
   }
 
   .txt-container {
-    /* text-align: center; */
+    text-align: center;
     width: 100%;
+    font-size: 1rem;
   }
 
   .img-container {
@@ -284,6 +339,14 @@ footer {
   .alimentacao-container {
     flex-direction: column;
     gap: 5rem;
+  }
+
+  .intro-art {
+    font-size: 1rem;
+  }
+
+  .atividades-list {
+    flex-wrap: wrap;
   }
 
   footer {
